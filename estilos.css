@@ -1,0 +1,151 @@
+/* Paleta de colores link: https://colorhunt.co/palette/001c30176b8764ccc5dafffb*/
+/*Fuente personalizada: Cinzel */
+
+/*Reglas CSS*/
+h1{
+    font-size: 4rem;/*valor relativo a la raiz*/
+    line-height: 1.3em;/*valor de acuerdo al tamaño x default*/
+
+    font-family: 'Cinzel', serif; /*Fuente personalizada*/
+}
+h4{
+    font-size: 1rem;/*valor relativo a la raiz*/
+    line-height: 1.3em;/*valor de acuerdo al tamaño x default*/
+
+    font-family: 'Cinzel', serif; /*Fuente personalizada*/
+}
+
+p{
+    font-size: 1rem;/*valor relativo a la raiz*/
+    line-height: 1.3em;/*valor de acuerdo al tamaño x default*/
+
+    font-family: 'Cinzel', serif; /*Fuente personalizada*/ 
+}
+/*Declarar clase del encabezado*/
+.header{ /*clase*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px gray;/*Agregar sombra*/
+    background: #001C30;
+
+    color: #DAFFFB;
+    padding: 3.5rem 0;/*agregando relleno*/
+    font-family: 'Cinzel', serif;
+    
+
+}
+ /*Contenedores*/
+.containermap{ /*clase*/
+    /*Ancho del elemento con el navegador*/
+
+    width: 85%;/*Se extiende 85% del naveghador*/
+    max-width: 700px;/*El ancho maximo de pixeles*/
+    
+    margin: 0 auto;/*Margen de los elementos de 0 arriba y abajo y automaticamente a los lados*/
+
+}
+.containertext{ /*clase*/
+    /*Ancho del elemento con el navegador*/
+
+    width: 85%;/*Se extiende 85% del naveghador*/
+    max-width: 2500px;/*El ancho maximo de pixeles*/
+    
+    margin: 0 auto;/*Margen de los elementos de 0 arriba y abajo y automaticamente a los lados*/
+}
+
+
+.main{ /*clase*/
+    padding-top: 15rem;
+    background: #DAFFFB;
+    padding: 4rem 0;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.top {
+    --offset: 50px; 
+    
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    width:45px;
+    aspect-ratio:1;
+    background:#9DC08B;
+    border-radius:10px;
+  }
+  .top:before {
+    content:"";
+    position:absolute;
+    inset:30%;
+    transform:translateY(20%) rotate(-45deg);
+    border-top:5px solid #fff;
+    border-right:5px solid #fff;
+  }
+
+/*-Inicia código compartido para simular botón*/
+.boton{ /*clase*/
+    display: flex;
+    justify-content: center;
+}
+.boton a{
+    margin-top: 50px;
+    border: 3px solid #001C30; /*anchura, estilo y color borde*/
+    padding: 20px; /*Espacio alrededor del texto*/
+    background-color: #64CCC5; /*Color botón*/
+    color: #001C30; /*Color texto*/
+    text-decoration: none; /*Decoración texto*/
+    font-family: 'Cinzel', serif; /*Tipografía texto*/
+    border-radius: 50px; /*Bordes redondos*/
+
+    width: 250px;
+    box-shadow: 5px 5px 15px gray;
+    
+    text-align: center;
+}
+
+.boton a:hover{
+    transform: translateY(-15px);
+}
+/*--Termina código compartido para simular botón*/
+
+/*Reglas css para botón ir arriba*/
+#go-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#go-top-button:hover {
+    /*Modificar a color de la paleta seleccionada*/
+    background-color: #555;
+}
+
+/*ESTILO PIE DE PAGINA*/
+.footer{ /*clase*/
+    justify-content: center;
+
+    background: #64CCC5;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    display: flex;
+    box-shadow: 5px 5px 15px gray; /*Agregar sombra*/
+
+}
+
+
+
